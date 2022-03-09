@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    background-color: black;
+    color: white;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.navLogo{
+    height: 60px;
+    margin-left: 10px;
+}
+
+.navBars{
+    font-size: 32px;
+    color: pink;
+}

@@ -25,18 +25,19 @@
     color: pink;
 }
 
-/* Main */
+/* Hero section */
 .heroTitle__container{
     justify-content: center;
     text-align: center;
     padding: 100px 30px 50px;
-    font-size: 40px;
-    line-height: 60px;
-    
+    font-size: 34px;
+    line-height: 65px;
+    font-family: 'Roboto Serif', serif;
 }
 
 .heroButtons__container{
     text-align: center;
+    padding-bottom: 300px;
 }
 
 /* BTN "View Resume" */
@@ -50,6 +51,7 @@ button {
     transition: filter 250ms;
     user-select: none;
     touch-action: manipulation;
+    font-family: 'Roboto Serif', serif;
 }
 
 .shadow {
@@ -127,4 +129,28 @@ button:active .shadow {
 
 button:focus:not(:focus-visible) {
     outline: none;
+}
+
+/* About Me section */
+.aboutMeTitle__container{
+    justify-content: center;
+    text-align: center;
+    padding: 100px 30px 15px;
+    font-size: 21px;
+    line-height: 45px;
+    font-family: 'Roboto Serif', serif;
+}
+
+.aboutMeText__container{
+    justify-content: center;
+    text-align: center;
+    padding: 0px 30px 50px;
+    font-size: 21px;
+    line-height: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Skills */
+.skills__container{
+    background-color: gray;
 }

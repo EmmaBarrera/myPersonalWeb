@@ -151,6 +151,22 @@ button:focus:not(:focus-visible) {
 }
 
 /* Skills */
+
 .skills__container{
-    background-color: gray;
+    display: grid;
+    grid-template-columns: 170px 170px;
+    grid-template-rows: repeat(3, 60px);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Serif', serif;
+}
+
+.skillBtn{
+    font-size: 20px;
+    background-color: rgba(90, 83, 83, 0.521);
+    width: 90%;
+    text-align: center;
+    height: 80%;
+    border-radius: 15px;
 }

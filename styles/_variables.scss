@@ -1,0 +1,30 @@
+/* Mixins MQ */
+@mixin tablet(){
+    @media screen and (min-width: 481px) and (max-width: 768px)  {
+        @content;
+    }
+}
+
+@mixin desktop(){
+    @media screen and (min-width: 769px) {
+        @content;
+    }
+}
+
+/* Mixins flexbox */
+@mixin flex($dis, $direction, $corte, $just, $align){
+    display: $dis;
+    flex-flow: $direction $corte;
+    justify-content: $just;
+    align-items: $align;
+}
+
+/* Mixins grid */
+@mixin grid($columnas, $espacio){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espacio;
+}
+/*------------------------------------------------------------------------------------*/
+
+/* Variables */

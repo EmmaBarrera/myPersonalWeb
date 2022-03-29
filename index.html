@@ -5,12 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emmanuel Barrera | Desarrollador Web</title>
-    <!-- Link CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css">
     <!-- Google Fonts -->
+
 </head>
 <body>
-    
+    <!-- Header desktop-->
+    <header class="header--desktop">
+        <h1 class="header__h1"><a href="#inicio" class="header__a">Emma</a></h1>
+        <nav class="nav">
+            <ul class="nav__ul">
+                <li class="nav__li"><a href="#about" class="nav__a" title="About">About</a></li>
+                <li class="nav__li"><a href="#works" class="nav__a" title="Works">Works</a></li>
+                <li class="nav__li"><a href="#contact" class="nav__a" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Header movil -->
     <header class="header">
         <nav class="header__nav">
             <div class="logo__container">
@@ -23,44 +36,64 @@
             </div>
         </nav>
     </header>
+
+    <!-- Main -->
     <main class="main">
-        <h3 class="hero__h3">Hola, mi nombre es</h3>
-        <h1 class="hero__h1">Emmanuel Barrera</h1>
-        <h2 class="hero__h2">Desarrollador Web + diseñador UX/UI</h2>
-        <p class="hero__p">Soy desarrollador web frontend con habilidades en diseño ux/ui </p>
-        <button class="hero__btn">Ver portfolio</button>
+        <section class="inicio" id="inicio">
+            <h3 class="hero__h3">Hola, mi nombre es</h3>
+            <h1 class="hero__h1">Emmanuel Barrera</h1>
+            <h2 class="hero__h2">Desarrollador Web + diseñador UX/UI</h2>
+            <p class="hero__p">Soy desarrollador web frontend con habilidades en diseño ux/ui </p>
+            <button class="hero__btn">Ver portfolio</button>
+        </section>
+
+        <!-- About -->
+        <section class="about" id="about">
+            <h3 class="about__h3">Sobre mí</h3>
+            <p class="about__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reprehenderit nostrum molestias repellendus, itaque inventore dolore facere blanditiis modi provident. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, minus.</p>
+            <button class="about__btn">Descargar CV</button>
+        </section>
+
+        <!-- Works -->
+        <section class="works" id="works">
+            <h3 class="works__h3">Proyectos</h3>
+        
+            <div class="works__container" id="works">
+                <article class="work">
+                    <a class="work__a" href="#" title="trabajo1">
+                        <img src="#" alt="imagen" class="work__img" loading="lazy">
+                        <h4 class="work__h4">Proyecto 1</h4>
+                        <p class="work__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, expedita.</p>
+                    </a>
+                </article>
+                <article class="work">
+                    <a class="work__a" href="#" title="trabajo1">
+                        <img src="#" alt="imagen" class="work__img" loading="lazy">
+                        <h4 class="work__h4">Proyecto 2</h4>
+                        <p class="work__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, expedita.</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact">
+            <h3 class="contact__h3">Contactame</h3>
+            <p class="contacto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, ut placeat! Doloremque!</p>
+            <button class="contacto__btn"></button>
+        </section>
     </main>
-    <section class="about">
-        <h3 class="about__h3">Sobre mí</h3>
-        <p class="about__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reprehenderit nostrum molestias repellendus, itaque inventore dolore facere blanditiis modi provident. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, minus.</p>
-        <button class="about__btn">Descargar CV</button>
-    </section>
-    <section class="works">
-        <h3 class="works__h3">Mis ultimos proyectos</h3>
-        <div class="work">
-            <h4 class="work__h4">Proyecto 1</h4>
-            <p class="work__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, expedita.</p>
-        </div>
-        <div class="work">
-            <h4 class="work__h4">Proyecto 2</h4>
-            <p class="work__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, expedita.</p>
-        </div>
-        <div class="work">
-            <h4 class="work__h4">Proyecto 31</h4>
-            <p class="work__p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, expedita.</p>
-        </div>
-    </section>
-    <section class="contact">
-        <h3 class="contact__h3">Contactame</h3>
-        <p class="contacto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, ut placeat! Doloremque!</p>
-        <button class="contacto__btn"></button>
-    </section>
+
+    <!-- Footer -->
     <footer class="footer">
-        <svg class="footer__svg"></svg>
-        <svg class="footer__svg"></svg>
-        <svg class="footer__svg"></svg>
-        <svg class="footer__svg"></svg>
-        <svg class="footer__svg"></svg>
+        <ul class="contacto__rrss">
+            <li class="contacto__li">
+                <a href="#" class="contacto__a" title="nombre" target="_blank" rel="noopener noreferrer">
+                    <svg class="contacto__svg"></svg>
+                </a>
+            </li>
+        </ul>
     </footer>
+
 </body>
 </html>

@@ -1,0 +1,74 @@
+/* Imports variables */
+@import "variables";
+@import "resets";
+
+.header{
+    display: none;
+}
+
+.header--desktop{    
+    background-color: antiquewhite;
+    
+    padding: 1em 2em;
+    
+    @include flex(flex, row, wrap, space-between, center);
+}
+
+.nav__ul{
+    @include flex(flex, row, wrap, space-between, center)    
+}
+
+.nav__li{
+    margin: 0 .5em;
+}
+
+.main{
+    background-color: gray;
+    margin: 1em 0;
+}
+
+.inicio, .about{
+    min-height: 80vh;
+    background-color: lightgreen;
+    margin: 1em 0;
+    @include flex(flex, column, wrap, center, flex-start)
+}
+
+.works{
+    min-height: 80vh;
+    background-color: lightgreen;
+    margin: 1em 0;
+    @include flex(flex, column, wrap, center, center)
+}
+
+.works__container{
+    max-width: 90%;
+    background-color: blueviolet;
+    @include flex(flex, column, wrap, center, center)
+}   
+
+.work{
+    background-color: aqua;
+    margin-top: 1em;
+    padding: 0 1em;
+    min-height: 30vh;
+    @include flex(flex, column, nowrap, center, center)
+}
+
+.work__a{
+    background-color: orange;
+}
+.work__img{
+    background-color: red;
+}
+.work__h4{}
+.work__p{}
+
+.contact{
+    min-height: 50vh;
+    display: none;
+}
+
+.footer{
+    background-color: gray;
+}

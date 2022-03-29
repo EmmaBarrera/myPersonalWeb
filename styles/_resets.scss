@@ -1,0 +1,89 @@
+/* Reset propiedades customizadas por usuario*/
+:root{
+    --color-primario: #181818;
+    --color-secundario: #f0f0f0;
+
+    --tipo-principal: Helvetica, Arial, sans-serif;
+    --tipo-secundaria: Verdana;
+}
+
+/* Reset margins y paddings*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+/* Reset imagenes */
+img, picture, video, iframe, figure{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+/* Reset enlaces */
+a{
+    display: block;
+}
+
+p a{
+    display: inline;
+}
+/* Reset estilos listas */
+li{
+    list-style-type: none;
+}
+/* Reset anclas suaves */
+html {
+    scroll-behavior: smooth;
+}
+/* Reset etiquetas de texto */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em{
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+/* Reset pseudoelementos quote */ 
+blockquote:before, blockquote:after, q:before, q:after{
+    content: '';
+    content: none;
+}
+/* Reset color de seleccion */
+::selection{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+}
+/* Reset tipografias y etiquetas formulario */
+form, input, textarea, select, button, label{
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color: inherit;
+}
+/* Reset tablas */
+table, tr, td{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Reset SVG */
+svg{
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+/* Reset tipografia web completa */
+body{
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: var(--tipo-principal);
+    color: var(--color-primario);
+    background-color: var(--color-secundario);
+    line-height: 1.4em;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

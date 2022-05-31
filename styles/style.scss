@@ -1,176 +1,42 @@
-/* Imports variables */
-@import "variables";
-@import "resets";
+@import "_resets";
 
-body{
-    font-family: $tipo-principal;
-    background-color: $color-1;
-}
+.header{
+    @include header-style;
+    
+    &__container{
 
-.header {
-    min-height: 10vh;
-    @include flex(flex, row, nowrap, space-between, center);
-
-    &__a {
-        margin: 15px;
-        color: $color-4;
     }
+    &__logo{
 
-    &__img {
     }
-
-    &__nav {
-    }
-
-    &__nav-li {
-        margin: 10px;
-        color: $color-4;
-    }
-
-    &__nav-ul {
-        margin-bottom: 0;
-        @include flex(flex, row, nowrap, center, center)
-    }
-}
-
-.section {
-    min-height: 70vh;
-    padding: 25px;
-    @include flex(flex, column, nowrap, flex-start, flex-start)
-}
-
-.hero {
-    min-height: 90vh;
-
-    &__h1 {
-        margin-top: .5em;
-        font-size: 2em;
-        font-weight: 600;
-        color: $color-4;
-    }
-
-    &__h2 {
-        margin-top: .8em;
-        font-size: 1.8em;
-        font-weight: 600;
-        color: $color-3;
-    }
-
-    &__h3 {
-        font-family: $tipo-secundaria;
-        margin-top: 5em;
-        color: $color-5;
-    }
-
-    &__p {
-        margin-top: 1.5em;
-        color: $color-5;
-    }
-
-    &__btn{
-        margin-top: 3em;
-        border-radius: 1em;
-        padding: 1em 2em;
-        background-color: $color-4;
-    }
-
     &__a{
+
+    }
+    &__img{
+
+    }
+    &__nav{
+
+    }
+    &__nav-list{
+
+    }
+    &__nav-item{
+
+    }
+    &__nav-link{
+
+    }
+    &__nav-item{
+
+    }
+    &__nav-item{
+
+    }
+    &__nav-btn{
+
+    }
+    &__btn-svg{
+
     }
 }
-
-.about {
-
-    &__h3 {
-        font-weight: 600;
-        font-size: 1.5em;
-        color: $color-4;
-    }
-
-    &__p {
-        margin-top: 2em;
-        color: $color-5;
-    }
-}
-
-.projects {
-    
-    &__h3{
-        font-weight: 600;
-        font-size: 1.5em;
-        margin-bottom: 1.5em;
-        color: $color-4;
-    }
-    &__card {
-        margin-top: 3em;
-        border: 1px solid $color-2;
-        min-height: 15em;
-        padding: 2em 1.5em;
-        background-color: $color-2;
-    }
-
-    &__h4{
-        margin-bottom: 1.2em;
-        color: $color-4;
-    }
-
-    &__p{
-        margin: 2em 0;
-        color: $color-5;
-    }
-
-    &__h5{
-        color: $color-4;
-    }
-
-    &__skills{
-        max-width: 5em;
-        @include flex(flex, row, nowrap, flex-start, flex-start)
-    }
-
-    &__svg{
-        color: $color-5;
-    }
-}
-
-.contact {
-    @include flex(flex, column, nowrap, center, center);
-
-    &__h3 {
-        font-weight: 600;
-        font-size: 1.5em;
-        color: $color-4;
-    }
-
-    &__p {
-        margin-top: 2em;
-        color: $color-5;
-    }
-
-    &__btn{
-        margin-top: 2em;
-        border-radius: 1em;
-        padding: 1em 2em;
-        background-color: $color-4;
-    }
-
-    &__a{}
-}
-
-.footer {
-    min-height: 20vh;
-    @include flex(flex, column, nowrap, center, center);
-    
-    &__icon {
-        margin: 1em;
-        color: $color-5;
-    }
-
-    &__icons {
-        @include flex(flex, row, nowrap, flex-start, center);
-    }
-
-    &__info {
-        color: $color-4;
-    }
-}
-

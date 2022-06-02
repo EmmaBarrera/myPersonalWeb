@@ -1,42 +1,48 @@
 @import "_resets";
+@import "_variables";
+
+body{
+    font-family: 'inter', sans-serif;
+    background-color: $color-2;
+    color: $color-4;
+}
 
 .header{
-    @include header-style;
-    
-    &__container{
+    @include flex(flex, row, nowrap, center, center);
 
+    &__container{
+        width: 70%;
+        min-height: 5em;
+        padding: 1em 2em;
+        
+        @include flex(flex, row, nowrap, space-between, center);
+        
     }
     &__logo{
-
+        min-width: 200px;
     }
     &__a{
-
     }
     &__img{
-
+        fill: whitesmoke;
+        height: 2.5em;
     }
     &__nav{
-
+        width: calc(100% - 200px);
     }
-    &__nav-list{
-
+    &__nav-ul{
+        @include flex(flex, row, wrap, flex-end, center);
     }
-    &__nav-item{
-
+    &__nav-li{
+        margin: 0 1em;
+        font-size: 1.1em;
+        font-weight: 300;
     }
-    &__nav-link{
-
-    }
-    &__nav-item{
-
-    }
-    &__nav-item{
-
+    &__nav-a{
     }
     &__nav-btn{
-
     }
     &__btn-svg{
-
+        display: none;
     }
 }

@@ -11,11 +11,11 @@
     }
 }
 
-/* Mixins flexbox */
-@mixin flex($dis, $direction, $corte, $just, $align){
-    display: $dis;
+/* Mixin flexbox */
+@mixin flex($display, $direction, $corte, $justify, $align){
+    display: $display;
     flex-flow: $direction $corte;
-    justify-content: $just;
+    justify-content: $justify;
     align-items: $align;
 }
 
@@ -25,15 +25,16 @@
     grid-template-columns: repeat($columnas, 1fr);
     gap: $espacio;
 }
+
 /*------------------------------------------------------------------------------------*/
 
 /* Variables */
 
-$tipo-principal: 'Titillium Web', sans-serif;
+$tipo-principal: 'Inter', sans-serif;
 $tipo-secundaria: 'Prata', serif;
 
-$color-1: #311d3f;
-$color-2: #522546;
-$color-3: #88304e;
-$color-4: #e23e57;
-$color-5: #ffffff;
+$color-1: #0A0D40;
+$color-2: #070826;
+$color-3: #2669BF;
+$color-4: #088C74;
+$color-5: #D97823;

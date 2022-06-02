@@ -46,3 +46,20 @@ body{
         display: none;
     }
 }
+
+.hero{
+    @include flex(flex, row, nowrap, center, center);
+    .hero__containter{
+        width: 70%;
+        min-height: 50em;
+        @include flex(flex, column, nowrap, center, center);
+    }
+    .hero__h1{
+        font-size: 2em;
+        font-weight: 600;
+        line-height: 1.2em;
+    }
+    .hero__p{
+
+    }
+}

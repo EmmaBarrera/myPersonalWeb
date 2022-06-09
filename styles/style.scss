@@ -2,60 +2,88 @@
 @import "_variables";
 
 body{
-    font-family: 'inter', sans-serif;
     background-color: $color-2;
     color: $color-4;
 }
 
-.header{
-    @include flex(flex, row, nowrap, center, center);
+//? HEADER
 
-    &__container{
-        width: 70%;
-        min-height: 5em;
-        padding: 1em 2em;
-        
-        @include flex(flex, row, nowrap, space-between, center);
-        
-    }
+.header{
+
+    width: 100%;
+    padding: 1em;
+    
+    @include flex(flex, row, wrap, space-between, center);
+
     &__logo{
-        min-width: 200px;
     }
     &__a{
     }
     &__img{
-        fill: whitesmoke;
-        height: 2.5em;
+        width: 2em;
+        height: 2em;
+        
+    }
+    &__btn{
+        display: none;
+
+        @include mobile(){
+            display: block;
+        }
+    }
+    &__svg{
+        width: 2em;
+        height: 2em;
     }
     &__nav{
-        width: calc(100% - 200px);
-    }
-    &__nav-ul{
-        @include flex(flex, row, wrap, flex-end, center);
-    }
-    &__nav-li{
-        margin: 0 1em;
-        font-size: 1.1em;
-        font-weight: 300;
-    }
-    &__nav-a{
-    }
-    &__nav-btn{
-    }
-    &__btn-svg{
-        display: none;
-    }
-}
 
+        @include mobile(){
+
+            width: 100%;
+            @include flex(flex, column, nowrap, center, center);
+            opacity: 0;
+            height: 0;
+            pointer-events: none;
+            overflow: hidden;
+            transition: all .7s ease;
+            
+            
+            &.active{
+                opacity: 1;
+                height: 50em;
+            }
+
+        }
+    }
+    &__ul{
+        @include flex(flex, row, nowrap, flex-end, center);
+
+        @include mobile(){
+            flex-direction: column;
+        }
+    }
+    &__li{
+        margin: 0 .5em;
+        @include mobile(){
+            margin: 1em 0;
+        }
+    }
+
+};
+
+//? HERO
 .hero{
     @include flex(flex, row, nowrap, center, center);
     
     .hero__containter{
+
         @include mobile(){
             max-width: 30em;
             min-height: 47em;
             @include flex(flex, column, nowrap, center, center);
         }
+
+
 
     }
     .hero__h1{

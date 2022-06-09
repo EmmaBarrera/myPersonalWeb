@@ -49,10 +49,14 @@ body{
 
 .hero{
     @include flex(flex, row, nowrap, center, center);
+    
     .hero__containter{
-        width: 70%;
-        min-height: 50em;
-        @include flex(flex, column, nowrap, center, center);
+        @include mobile(){
+            max-width: 30em;
+            min-height: 47em;
+            @include flex(flex, column, nowrap, center, center);
+        }
+
     }
     .hero__h1{
         font-size: 2em;
@@ -60,6 +64,5 @@ body{
         line-height: 1.2em;
     }
     .hero__p{
-
     }
 }

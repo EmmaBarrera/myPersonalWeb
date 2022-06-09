@@ -12,7 +12,6 @@ body{
 
     width: 100%;
     padding: 1em;
-    
     @include flex(flex, row, wrap, space-between, center);
 
     &__logo{
@@ -26,7 +25,6 @@ body{
     }
     &__btn{
         display: none;
-
         @include mobile(){
             display: block;
         }
@@ -36,9 +34,7 @@ body{
         height: 2em;
     }
     &__nav{
-
         @include mobile(){
-
             width: 100%;
             @include flex(flex, column, nowrap, center, center);
             opacity: 0;
@@ -47,14 +43,13 @@ body{
             overflow: hidden;
             transition: all .7s ease;
             
-            
             &.active{
                 opacity: 1;
                 height: 50em;
             }
-
         }
     }
+
     &__ul{
         @include flex(flex, row, nowrap, flex-end, center);
 
@@ -62,6 +57,7 @@ body{
             flex-direction: column;
         }
     }
+
     &__li{
         margin: 0 .5em;
         @include mobile(){
@@ -73,24 +69,31 @@ body{
 
 //? HERO
 .hero{
-    @include flex(flex, row, nowrap, center, center);
+    @include flex(flex, column, nowrap, center, center);
+    max-width: 30em;
+    min-height: 50em;
     
-    .hero__containter{
-
-        @include mobile(){
-            max-width: 30em;
-            min-height: 47em;
-            @include flex(flex, column, nowrap, center, center);
-        }
-
-
-
-    }
-    .hero__h1{
+    &__h1{
         font-size: 2em;
         font-weight: 600;
         line-height: 1.2em;
+        text-align: center;
+        margin: .5em 0;
     }
-    .hero__p{
+
+    &__p{
+        font-size: 1.2em;
+        font-weight: 300;
+        line-height: 1.2em;
+        text-align: center;
+        margin: .5em 0;
+    }
+
+    &__btn{
+
+    }
+
+    &__a{
+
     }
 }
